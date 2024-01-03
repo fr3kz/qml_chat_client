@@ -1,0 +1,28 @@
+{
+	"BUILD_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/chatappqml_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml",
+	"CMAKE_SOURCE_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml",
+	"INCLUDE_DIR" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/chatappqml_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Main.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Auth/RegisterPage.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Auth/AuthPage.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Auth/LoginPage.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Chat/ChatList.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Chat/MainView.qml",
+		"/Users/artur/Desktop/nauka/chatapp-qml/ui/Chat/ChatPage.qml"
+	],
+	"LOCK_FILE" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "/Users/artur/Qt/6.6.1/macos/./libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/artur/Desktop/nauka/chatapp-qml/qml.qrc",
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,9 @@
+-rootPath
+/Users/artur/Desktop/nauka/chatapp-qml
+-cmake-output
+-output-file
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/.qt_plugins/Qt6_QmlPlugins_Imports_chatappqml.cmake
+-importPath
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug
+-importPath
+/Users/artur/Qt/6.6.1/macos/./qml

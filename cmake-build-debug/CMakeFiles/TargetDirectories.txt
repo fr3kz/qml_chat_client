@@ -1,0 +1,6 @@
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml.dir
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml_qmlimportscan.dir
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml_autogen_timestamp_deps.dir
+/Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug/CMakeFiles/chatappqml_autogen.dir

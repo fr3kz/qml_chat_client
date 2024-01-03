@@ -1,0 +1,18 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>ui/Main.qml</file>
+
+        <file>ui/Auth/AuthPage.qml</file>
+        <file>ui/Auth/LoginPage.qml</file>
+        <file>ui/Auth/RegisterPage.qml</file>
+
+        <file>ui/Chat/MainView.qml</file>
+        <file>ui/Chat/ChatPage.qml</file>
+        <file>ui/Chat/ChatList.qml</file>
+
+
+
+
+    </qresource>
+</RCC>
