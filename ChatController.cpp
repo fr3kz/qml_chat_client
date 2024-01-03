@@ -62,6 +62,11 @@ void ChatController::set_lobby_id(int id) {
 int ChatController::lobby_id() {
     return _lobby_id;
 }
+int ChatController::user_id() {
+    int userid = settings->value("userid").toInt();
+    qDebug() << userid;
+    return userid;
+}
 
 QList<QVariantMap> ChatController::get_messages(int lobbyid) {
 

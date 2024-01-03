@@ -24,6 +24,7 @@ public slots:
     void send_message(int lobbyid,QString message,int userid);
     void set_lobby_id(int id);
     int lobby_id();
+    int user_id();
 
 
 private:

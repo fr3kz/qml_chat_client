@@ -23,10 +23,10 @@ void AuthController::sign_up(QString email, QString password) {
     QJsonDocument response = api->post_auth("http://127.0.0.1:8000/users/login/",jbytearray);
     QJsonObject response_obj = response.object();
 
-
+    qDebug() << response_obj["userid"];
     settings->setValue("sessionid",response_obj["message"].toString());
     settings->setValue("user",response_obj["user"].toString());
-    settings->setValue("userid",response_obj["userid"].toString());
+    settings->setValue("userid",response_obj["userid"].toInt());
 
     emit loginsuccess();
 }

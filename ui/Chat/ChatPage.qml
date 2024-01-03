@@ -8,10 +8,11 @@ Rectangle {
     height: parent ? parent.height : 0
 
     property int lobbyId: ChatController.lobby_id()
+    property int userId: ChatController.user_id()
 
     WebSocket {
         id: socket
-        url: "ws://127.0.0.1:8000/ws/chat/" + lobbyId + "/2/"
+        url: "ws://127.0.0.1:8000/ws/chat/" + lobbyId + "/" + userId + "/"
         onTextMessageReceived: {
             console.log("Received message:", message);
             try {
