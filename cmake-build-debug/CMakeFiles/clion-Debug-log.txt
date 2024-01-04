@@ -1,27 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/artur/Desktop/nauka/chatapp-qml -B /Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug
--- Could NOT find Qt6WebSockets (missing: Qt6WebSockets_DIR)
-CMake Error at CMakeLists.txt:11 (find_package):
-  Found package configuration file:
-
-    /Users/artur/Qt/6.6.1/macos/lib/cmake/Qt6/Qt6Config.cmake
-
-  but it set Qt6_FOUND to FALSE so package "Qt6" is considered to be NOT
-  FOUND.  Reason given by package:
-
-  Failed to find required Qt component "WebSockets".
-
-  Expected Config file at
-  "/Users/artur/Qt/6.6.1/macos/lib/cmake/Qt6WebSockets/Qt6WebSocketsConfig.cmake"
-  does NOT exist
-
-
-
-  Configuring with --debug-find-pkg=Qt6WebSockets might reveal details why
-  the package was not found.
-
-  Configuring with -DQT_DEBUG_FIND_PACKAGE=ON will print the values of some
-  of the path variables that find_package uses to try and find the package.
-
-
-
--- Configuring incomplete, errors occurred!
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/artur/Desktop/nauka/chatapp-qml/cmake-build-debug

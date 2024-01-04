@@ -6,9 +6,18 @@ import QtWebSockets 1.3
 Rectangle {
     width: parent ? parent.width : 0
     height: parent ? parent.height : 0
+    color: "lightgrey"
+    radius:20
+    Button {
+        text: "Wyjdz"
+        onClicked: {
+            chatloader.source = "../Chat/ChatList.qml"
+        }
+    }
 
     property int lobbyId: ChatController.lobby_id()
     property int userId: ChatController.user_id()
+    property string lobby_name : ChatController.lobby_title()
 
     WebSocket {
         id: socket
@@ -48,9 +57,11 @@ Rectangle {
         Layout.margins: 10
 
         Text {
-            text: "Chat"
+            text: lobby_name
             font.pixelSize: 20
             color: "blue"
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
         }
 
         ListView {
@@ -60,36 +71,31 @@ Rectangle {
                 id: messageModel
             }
 
-            delegate: Item {
+            delegate: Rectangle {
                 width: parent ? parent.width : 0
                 height: 80
+                color: "lightblue"
+                border.color: "blue"
+                border.width: 1
 
-                Rectangle {
-                    width: parent ? parent.width : 0
-                    height: 80
-                    color: "lightblue"
-                    border.color: "blue"
-                    border.width: 1
+                ColumnLayout {
+                    Text {
+                        text: "User: " + (model.user ? model.user : "Unknown User")
+                        color: "black"
+                        padding: 5
+                    }
 
-                    ColumnLayout {
-                        Text {
-                            text: "User: " + (model.user ? model.user : "Unknown User")
-                            color: "black"
-                            padding: 5
-                        }
+                    Text {
+                        text: "Message: " + (model.message ? model.message : "Unknown Message")
+                        color: "black"
+                        padding: 5
+                    }
 
-                        Text {
-                            text: "Message: " + (model.message ? model.message : "Unknown Message")
-                            color: "black"
-                            padding: 5
-                        }
-
-                        Text {
-                            text: "Time: " + (model.time ? model.time : "Unknown Time")
-                            color: "black"
-                            padding: 5
-                            horizontalAlignment: Text.AlignRight
-                        }
+                    Text {
+                        text: "Time: " + (model.time ? model.time : "Unknown Time")
+                        color: "black"
+                        padding: 5
+                        horizontalAlignment: Text.AlignRight
                     }
                 }
             }
@@ -127,4 +133,6 @@ Rectangle {
             }
         }
     }
+
+
 }

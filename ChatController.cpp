@@ -71,6 +71,16 @@ int ChatController::user_id() {
 QList<QVariantMap> ChatController::get_messages(int lobbyid) {
 
     //web socket
+
+//    /**/
 }
 
 void ChatController::send_message(int lobbyid, QString message, int userid) {}
+
+void ChatController::set_lobby_name(QString title) {
+    lobby_name = title;
+}
+
+QString ChatController::lobby_title() {
+    return lobby_name;
+}

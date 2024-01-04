@@ -16,6 +16,7 @@ class ChatController : public QObject{
 public:
     ChatController(QObject *parent);
     int _lobby_id;
+    QString lobby_name;
 
 
 public slots:
@@ -25,6 +26,8 @@ public slots:
     void set_lobby_id(int id);
     int lobby_id();
     int user_id();
+    QString lobby_title();
+    void set_lobby_name(QString title);
 
 
 private:

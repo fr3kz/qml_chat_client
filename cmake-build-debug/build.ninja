@@ -194,7 +194,7 @@ build .qt_plugins/Qt6_QmlPlugins_Imports_chatappqml.cmake | ${cmake_ninja_workdi
 #############################################
 # Phony custom command for CMakeFiles/chatappqml_autogen_timestamp_deps
 
-build CMakeFiles/chatappqml_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/chatappqml_autogen_timestamp_deps: phony /Users/artur/Qt/6.6.1/macos/./libexec/moc /Users/artur/Qt/6.6.1/macos/lib/QtWebSockets.framework/Versions/A/QtWebSockets /Users/artur/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/artur/Qt/6.6.1/macos/lib/QtQml.framework/Versions/A/QtQml /Users/artur/Qt/6.6.1/macos/lib/QtQuick.framework/Versions/A/QtQuick
+build CMakeFiles/chatappqml_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/chatappqml_autogen_timestamp_deps: phony /Users/artur/Qt/6.6.1/macos/lib/QtGui.framework/Versions/A/QtGui /Users/artur/Qt/6.6.1/macos/lib/QtWebSockets.framework/Versions/A/QtWebSockets /Users/artur/Qt/6.6.1/macos/./libexec/moc /Users/artur/Qt/6.6.1/macos/lib/QtQml.framework/Versions/A/QtQml /Users/artur/Qt/6.6.1/macos/lib/QtQuick.framework/Versions/A/QtQuick
 
 
 #############################################
