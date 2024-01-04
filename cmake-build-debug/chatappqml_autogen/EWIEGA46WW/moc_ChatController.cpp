@@ -51,11 +51,14 @@ static constexpr auto qt_meta_stringdata_CLASSChatControllerENDCLASS = QtMocHelp
     "set_lobby_id",
     "id",
     "lobby_id",
-    "user_id"
+    "user_id",
+    "lobby_title",
+    "set_lobby_name",
+    "title"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSChatControllerENDCLASS_t {
-    uint offsetsAndSizes[26];
+    uint offsetsAndSizes[32];
     char stringdata0[15];
     char stringdata1[10];
     char stringdata2[19];
@@ -69,6 +72,9 @@ struct qt_meta_stringdata_CLASSChatControllerENDCLASS_t {
     char stringdata10[3];
     char stringdata11[9];
     char stringdata12[8];
+    char stringdata13[12];
+    char stringdata14[15];
+    char stringdata15[6];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSChatControllerENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -86,7 +92,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSChatControllerENDCLASS_t qt_met
         QT_MOC_LITERAL(94, 12),  // "set_lobby_id"
         QT_MOC_LITERAL(107, 2),  // "id"
         QT_MOC_LITERAL(110, 8),  // "lobby_id"
-        QT_MOC_LITERAL(119, 7)   // "user_id"
+        QT_MOC_LITERAL(119, 7),  // "user_id"
+        QT_MOC_LITERAL(127, 11),  // "lobby_title"
+        QT_MOC_LITERAL(139, 14),  // "set_lobby_name"
+        QT_MOC_LITERAL(154, 5)   // "title"
     },
     "ChatController",
     "get_lobby",
@@ -100,7 +109,10 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSChatControllerENDCLASS_t qt_met
     "set_lobby_id",
     "id",
     "lobby_id",
-    "user_id"
+    "user_id",
+    "lobby_title",
+    "set_lobby_name",
+    "title"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -112,7 +124,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChatControllerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -120,12 +132,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChatControllerENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    3, 0x0a,    1 /* Public */,
-       4,    1,   51,    3, 0x0a,    2 /* Public */,
-       6,    3,   54,    3, 0x0a,    4 /* Public */,
-       9,    1,   61,    3, 0x0a,    8 /* Public */,
-      11,    0,   64,    3, 0x0a,   10 /* Public */,
-      12,    0,   65,    3, 0x0a,   11 /* Public */,
+       1,    0,   62,    3, 0x0a,    1 /* Public */,
+       4,    1,   63,    3, 0x0a,    2 /* Public */,
+       6,    3,   66,    3, 0x0a,    4 /* Public */,
+       9,    1,   73,    3, 0x0a,    8 /* Public */,
+      11,    0,   76,    3, 0x0a,   10 /* Public */,
+      12,    0,   77,    3, 0x0a,   11 /* Public */,
+      13,    0,   78,    3, 0x0a,   12 /* Public */,
+      14,    1,   79,    3, 0x0a,   13 /* Public */,
 
  // slots: parameters
     0x80000000 | 2,
@@ -134,6 +148,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSChatControllerENDCLASS[] = {
     QMetaType::Void, QMetaType::Int,   10,
     QMetaType::Int,
     QMetaType::Int,
+    QMetaType::QString,
+    QMetaType::Void, QMetaType::QString,   15,
 
        0        // eod
 };
@@ -163,7 +179,12 @@ Q_CONSTINIT const QMetaObject ChatController::staticMetaObject = { {
         // method 'lobby_id'
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'user_id'
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'lobby_title'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'set_lobby_name'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
@@ -184,6 +205,9 @@ void ChatController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 5: { int _r = _t->user_id();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 6: { QString _r = _t->lobby_title();
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 7: _t->set_lobby_name((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
@@ -208,13 +232,13 @@ int ChatController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
 }
