@@ -28,7 +28,7 @@ This project is a chat application built with QT 6.6 and QML. The application en
   - The API is part of the [chat_app](https://github.com/fr3kz/chat_app) backend application.
 
 - **Screenshots:**
-  -![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-3%20o%2012.55.02.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-3%20o%2012.55.09.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-3%20o%2012.58.40.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-3%20o%2013.00.00.png)
+  -![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-4%20o%2014.16.44.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-4%20o%2014.17.02.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-4%20o%2014.17.10.png)![Panel Logowania](https://github.com/fr3kz/qml_chat_client/blob/main/sc/Zrzut%20ekranu%202024-01-4%20o%2014.17.44.png)
 
 
 ## How to Run
